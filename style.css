@@ -1,0 +1,48 @@
+body{
+    background-color: #81f4e9;
+    padding: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
+
+}
+
+.accordiam{
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px 4px #35e0cf;
+    margin-bottom: 25px;
+    line-height: 1.4rem;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon{
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.icon.active{
+    transform: rotate(-180deg);
+}
+
+.answere{
+    color: #666;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+
+/* we do this with 'scrollHeight' property (but it is not available in css it is in JS  */
+
+/*
+ .answere.active{
+    max-height: fit-content;
+} 
+*/
+
